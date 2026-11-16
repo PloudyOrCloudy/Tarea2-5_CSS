@@ -1,0 +1,34 @@
+html {
+    min-height: 90%;
+    background-image: url("decoration.png"), url("old_paper.jpg");
+    background-repeat: repeat, no-repeat;
+    background-size: clamp(160px, 24vmin, 360px) auto, cover;
+    background-position: left top, center;
+    background-attachment: scroll, fixed;
+}
+
+body {
+    min-height: 90vh;
+    margin: 0;
+    display: grid;
+    grid-template-rows: minmax(0, 1fr) auto;
+    justify-items: center;
+}
+
+h1 {
+    align-self: center;
+    margin: 0;
+    padding: 1rem;
+    color: red;
+    text-align: center;
+    font-size: clamp(3rem, 13vw, 9rem);
+    line-height: 0.9;
+}
+
+img {
+    display: block;
+    width: 90vw;
+    max-width: 90%;
+    max-height: 48vh;
+    object-fit: contain;
+}
